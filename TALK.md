@@ -6,6 +6,7 @@
 - JWT / oAuth.
 - XSRF.
 - Using the correct lifecycle hooks.
+- Dynamically watching deep properties.
 
 # Hickups
 

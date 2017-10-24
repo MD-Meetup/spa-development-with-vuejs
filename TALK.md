@@ -1,7 +1,8 @@
 # PoI's
 
-- JWT / oAuth
-- XSRF
+- JWT / oAuth.
+- XSRF.
+- Using the correct lifecycle hooks.
 
 # Hickups
 

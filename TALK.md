@@ -7,6 +7,7 @@
 - XSRF.
 - Using the correct lifecycle hooks.
 - Dynamically watching deep properties.
+- How to handle states.
 
 # Hickups
 
@@ -15,3 +16,4 @@
 - Permissions.
 - XSRF.
 - SEO.
+- States. (why you should stop using the local storage)

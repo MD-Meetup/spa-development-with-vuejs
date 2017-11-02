@@ -5,8 +5,10 @@
     - VueX is a statemanagement pattern and library.
     - It serves as a centralized store for all the components in an application, with rules ensuring that the state can only be mutated       in a predictable fashion.
     - And, it also doesn't break (so does work) with Vue.js it's reactivity.
-  - Why would you use VueX over a global window object.
 - JWT / oAuth.
+  - JWT Seems like the logical option, it allows the client's to talk to the server directly, instead of doing handshakes and giving the     the user the idea they are logging into a third party website and granting our client access to that third party website's
+    information.
+  - Don't even think about oAuth, oAuth was not meant to be used for SPA's (at least not if you're always the "first party client").
 - XSRF.
 - Using the correct lifecycle hooks.
 - Dynamically watching deep properties.

@@ -2,7 +2,10 @@
 
 - VueX.
   - What is VueX.
-  - Why would you use VueX. (to keep internal states).
+    - VueX is a statemanagement pattern and library.
+    - It serves as a centralized store for all the components in an application, with rules ensuring that the state can only be mutated       in a predictable fashion.
+    - And, it also doesn't break (so does work) with Vue.js it's reactivity.
+  - Why would you use VueX over a global window object.
 - JWT / oAuth.
 - XSRF.
 - Using the correct lifecycle hooks.

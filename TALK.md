@@ -13,25 +13,21 @@
 - Using the correct lifecycle hooks.
 - Dynamically watching deep properties.
 - How to handle states.
-
-# Hickups
-
-- Storing the JWT (/ token)
-  - There is three options in storing the Token, these are:
-    - Cookie (server side)
-      - The http only cookie is a rather secure way of storing the token
-        When using a http only cookie + ssl (if you dont use ssl you're a nut xoxo), there is practically no way to have
-        It snooped, not by xss (http only), and not by mitm (man in the middle).
-    - Cookie (client side)
-      - 
-    - LocalStorage (client side)
-      -
+- Storing the JWT (/ token), There is three options in storing the Token, these are:
+  - Cookie (server side)
+    - The http only cookie is a rather secure way of storing the token
+      When using a http only cookie + ssl (if you dont use ssl you're a nut xoxo), there is practically no way to have
+      It snooped, not by xss (http only), and not by mitm (man in the middle).
+  - Cookie (client side)
+    - //
+  - LocalStorage (client side)
+    - //
 - Splitting components and views (/ pages)
-  - It is a best practice to separate the components and the views, this gives a clear indication on what the router may  
-    target, and it keeps your directory clean.
-  - Refreshing
-    This also prevents "refresh issues", lets say one component is used for 2 routes, this means that when we go from 
-    `/a` to `/b` the actual component will not change, thus giving us the issue that our view isn't refreshed,
+  - It is a best practice to separate the components and the views, this gives a clear indication on what the router may  
+    target, and it keeps your directory clean.
+  - Refreshing
+    This also prevents "refresh issues", lets say one component is used for 2 routes, this means that when we go from 
+    `/a` to `/b` the actual component will not change, thus giving us the issue that our view isn't refreshed,
 - Permissions.
 - XSRF.
 - SEO.

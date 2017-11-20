@@ -16,7 +16,16 @@
 
 # Hickups
 
-- Storing the JWT.
+- Storing the JWT (/ token)
+  - There is three options in storing the Token, these are:
+    - Cookie (server side)
+      - The http only cookie is a rather secure way of storing the token
+        When using a http only cookie + ssl (if you dont use ssl you're a nut xoxo), there is practically no way to have
+        It snooped, not by xss (http only), and not by mitm (man in the middle).
+    - Cookie (client side)
+      - 
+    - LocalStorage (client side)
+      -
 - Component refreshing.
 - Permissions.
 - XSRF.

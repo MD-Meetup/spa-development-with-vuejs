@@ -26,7 +26,12 @@
       - 
     - LocalStorage (client side)
       -
-- Component refreshing.
+- Splitting components and views (/ pages)
+  - It is a best practice to separate the components and the views, this gives a clear indication on what the router may  
+    target, and it keeps your directory clean.
+  - Refreshing
+    This also prevents "refresh issues", lets say one component is used for 2 routes, this means that when we go from 
+    `/a` to `/b` the actual component will not change, thus giving us the issue that our view isn't refreshed,
 - Permissions.
 - XSRF.
 - SEO.

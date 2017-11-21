@@ -5,6 +5,10 @@
     - VueX is a statemanagement pattern and library.
     - It serves as a centralized store for all the components in an application, with rules ensuring that the state can only be mutated       in a predictable fashion.
     - And, it also doesn't break (so does work) with Vue.js it's reactivity.
+  - Uses
+    - VueX can primarily be used as a "global event bus", it can handle your state and it allows you to let every api request be
+      handeled in VueX, this forces a "solid" principle, and (if used) prevents your components from having all sorts of duplicate api
+      calls.
 - JWT / oAuth.
   - JWT Seems like the logical option, it allows the client's to talk to the server directly, instead of doing handshakes and giving the     the user the idea they are logging into a third party website and granting our client access to that third party website's
     information.

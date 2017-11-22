@@ -1,4 +1,4 @@
-# PoI's
+# Single Page Application development with Laravel and Vue.js
 
 - VueX.
   - What is VueX.

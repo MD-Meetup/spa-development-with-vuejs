@@ -88,6 +88,10 @@ almost like Laravel guards, you can do some checks before each route and decide 
 
 ## Problems we've encountered
 
+### Reactivity
+You're going to bash your head against a wall because you've fucked up the reactivity, no doubt, just know it happens, 
+and its party of the Vue.js learning curve, read the [documentation](https://vuejs.org/v2/guide/reactivity.html) thoroughly.
+
 ### API Routing
 How are you going to tackle routing, we thought we'd be the smart ones, create an api endpoint that gives the front-end all routes by name and method.
 But did it work out?
@@ -96,4 +100,10 @@ No, this resulted in the application having to wait on this particular call and 
 
 Even though it was only once per "page load", this was a real kicker for our application, don't do this, just write the routes out (and thus communicate thoroughly between front- and back-end)
 
+### Hard linking components (instead of a dedicated views folder)
+We somehow managed to let our router target components from our `components` folder, this seemed to make things a bit intrusive,
+Therefore we decided to either keep a `views` or `pages` (whatever you like) folder that is dedicated for the actual views.
 
+This also prevents "refresh issues", lets say one component is used for 2 routes, 
+this means that when we go from `/a` to `/b` the actual component will not change, 
+thus giving us the issue that our view isn't refreshed (as the lifecycle hooks are not triggered as expected).
